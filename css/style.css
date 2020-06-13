@@ -182,11 +182,56 @@ h4 {
 }
 
 .modal-content {
-  background: #fff;
-  padding: 4rem;
+	display: none;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
+	background: #fff;
+	padding: 4rem;
+	border-radius: 1.5rem;
+}
+
+.modal-header {
+	margin-bottom: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal-header h2 {
+	text-transform: uppercase;
+	color: var(--Dark-Text);
+	font-size: 3rem;
+}
+
+.toggle {
+	cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 40px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2.5px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
