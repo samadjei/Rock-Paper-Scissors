@@ -241,6 +241,11 @@ h4 {
 	background: var(--Dark-Text);
 }
 
+/* *MODAL */
+.modal-mobile {
+	display: none;
+}
+
 .modal-outer {
 	display: grid;
 	background: rgba(0, 0, 0, 0.7);
@@ -286,13 +291,12 @@ h4 {
 	align-items: center;
 }
 
-.modal-header h2 {
+.rules-header {
 	text-transform: uppercase;
 	color: var(--Dark-Text);
 	font-size: 3rem;
 }
 
-/* Toggle  */
 .toggle {
 	cursor: pointer;
 }
@@ -330,5 +334,39 @@ h4 {
 	.rules {
 		left: 55%;
 		transform: translate(-50%, -50%);
+	}
+
+	.modal-mobile {
+		display: block;
+	}
+
+	.modal-mobile {
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+		text-align: center;
+	}
+
+	.mobile-inner {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin-top: 10rem;
+	}
+
+	.rules-header {
+		margin-bottom: 12rem;
+	}
+
+	.mobile-inner .toggle {
+		position: absolute;
+		bottom: 20rem;
+		left: 20rem;
 	}
 }
