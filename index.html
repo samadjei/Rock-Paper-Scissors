@@ -22,53 +22,32 @@
 						<div class="score-content flex">
 							<h4 class="score-title">Score</h4>
 							<div class="score-number">
-								<span>0</span>
+								<span id="score">0</span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- *OPTIONS -->
-    <!-- <div class="options">
-      <button class="paper btn-circle" data-choice="paper">
-        <span class="btn-bg">
-          <img src="images/icon-paper.svg" alt="paper icon" />
-        </span>
-      </button>
-      <button class="scissors btn-circle" data-choice="scissors">
-        <span class="btn-bg">
-          <img src="images/icon-scissors.svg" alt="scissors icon" />
-        </span>
-      </button>
-      <button class="rock btn-circle" data-choice="rock">
-        <span class="btn-bg">
-          <img src="images/icon-rock.svg" alt=" rock icon" />
-        </span>
-      </button>
-    </div>
-  </div> -->
-      
-      <div class="selection">
-        <div>
-          <h2>You picked</h2>
-          <button class="paper btn-circle">
-            <span class="btn-bg">
-              <img src="images/icon-paper.svg" alt="paper icon" />
-            </span>
-          </button>
-        </div>
-        <div>
-          <h1>You <span id="win">win</span></h1>
-          <button id="reset" class="btn">Play Again</button>
-        </div>
-        <div>
-          <h2>The House Picked</h2>
-          <button class="rock btn-circle">
-            <span class="btn-bg">
-              <img src="images/icon-rock.svg" alt=" rock icon" />
-            </span>
-          </button>
-        </div>
+      <div id="option" class="options">
+        <button class="paper btn-circle" data-choice="paper">
+          <span class="btn-bg">
+            <img src="images/icon-paper.svg" alt="paper icon" />
+          </span>
+        </button>
+        <button class="scissors btn-circle" data-choice="scissors">
+          <span class="btn-bg">
+            <img src="images/icon-scissors.svg" alt="scissors icon" />
+          </span>
+        </button>
+        <button class="rock btn-circle" data-choice="rock">
+          <span class="btn-bg">
+            <img src="images/icon-rock.svg" alt=" rock icon" />
+          </span>
+        </button>
       </div>
+    </div>
+      
+      
 
       <!-- *RULES  -->
 			<div class="rules">
@@ -87,6 +66,28 @@
 			</div>
 		</div>
 
+    <div class="selection" id="selection">
+      <div>
+        <h2>You picked</h2>
+        <button id="user-select" class="paper btn-circle dont-click">
+          <span class="btn-bg">
+            <img src="images/icon-paper.svg" alt="paper icon" />
+          </span>
+        </button>
+      </div>
+      <div>
+        <h1 class="big-text">You <span id="winner">win</span></h1>
+        <button id="reset" class="btn">Play Again</button>
+      </div>
+      <div>
+        <h2>The House Picked</h2>
+        <button id="computer-select" class="rock btn-circle dont-click">
+          <span class="btn-bg">
+            <img src="images/icon-rock.svg" alt=" rock icon" />
+          </span>
+        </button>
+      </div>
+    </div>
 		<!-- You Picked
   The House Picked
 
