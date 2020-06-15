@@ -165,10 +165,57 @@ h4 {
 	transform: scale(0.9);
 }
 
+
+/* *Picked  */
+.btn {
+	border: 2px solid #fff;
+	border-radius: 10px;
+	background-color: #fff;
+	color: var(--Dark-Text);
+	font-size: 2rem;
+	font-family: inherit;
+	padding: 1rem 1.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.selection {
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 80rem;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.selection .btn-circle {
+	margin: 5rem;
+	transform: scale(1.4);
+}
+
+.selection .dont-click{
+	pointer-events: none;
+}
+
+.selection h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.big-text {
+	font-size: 3rem;
+	margin: 0 0 2rem;
+	line-height: 0.8;
+	text-transform: uppercase;
+}
+
+
+/* *TOGGLE */
 .rules {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 5rem;
+	right: 5rem;
 }
 
 .rules a {
@@ -267,48 +314,4 @@ h4 {
 }
 .close:after {
 	transform: rotate(-45deg);
-}
-
-/* *Picked  */
-.btn {
-	border: 2px solid #fff;
-	border-radius: 10px;
-	background-color: #fff;
-	color: var(--Dark-Text);
-	font-size: 2rem;
-	font-family: inherit;
-	padding: 1rem 1.5rem;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-
-.selection {
-	display: none;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-	width: 80rem;
-	max-width: 100%;
-	margin: 0 auto;
-}
-
-.selection .btn-circle {
-	margin: 5rem;
-	transform: scale(1.4);
-}
-
-.selection .dont-click{
-	pointer-events: none;
-}
-
-.selection h2 {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.big-text {
-	font-size: 3rem;
-	margin: 0 0 2rem;
-	line-height: 0.8;
-	text-transform: uppercase;
 }
