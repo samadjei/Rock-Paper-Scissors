@@ -291,7 +291,8 @@ h4 {
 	align-items: center;
 }
 
-.rules-header {
+.rules-header,
+.mobile-header {
 	text-transform: uppercase;
 	color: var(--Dark-Text);
 	font-size: 3rem;
@@ -329,8 +330,7 @@ h4 {
 	transform: rotate(-45deg);
 }
 
-/* *MEDIA QUERIES  */
-@media screen and (max-width: 499px) {
+@media screen and (min-width: ) /* *MEDIA QUERIES */ @media screen and (max-width: 499px) {
 	.rules {
 		left: 55%;
 		transform: translate(-50%, -50%);
@@ -349,8 +349,17 @@ h4 {
 		height: 100vh;
 		display: flex;
 		justify-content: center;
-		/* align-items: center; */
 		text-align: center;
+		/* Hide this modal until we need it */
+		opacity: 0;
+		/* tell the browser to ignore any events that comes to it   */
+		pointer-events: none;
+		transition: opacity 0.2s;
+	}
+
+	.modal-mobile.open {
+		opacity: 1;
+		pointer-events: all;
 	}
 
 	.mobile-inner {
