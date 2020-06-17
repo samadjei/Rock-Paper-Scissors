@@ -362,14 +362,19 @@ h4 {
 }
 
 @media screen and (max-width: 499px) {
-
+	.flex {
+		padding: 0 2rem;
+	}
 	.selection .btn-circle {
-		margin: 5rem 1rem;
+		margin: 5rem 1.3rem;
+	}
+	.container {
+		padding: 0rem 0rem;
 	}
 
 	.selection {
 		max-width: 100%;
-		width: 60rem;
+		width: 40rem;
 	}
 
 	h1 {
@@ -377,7 +382,11 @@ h4 {
 	}
 
 	.score {
-		padding: 1.3rem 2rem;
+		padding: 1.3rem 1rem;
+	}
+
+	.big-text {
+		font-size: 4rem;
 	}
 
 	.btn-circle {
@@ -433,4 +442,12 @@ h4 {
 		top: 80rem;
 		left: 18rem;
 	}
+
+	.selection h2 {
+		font-size: 1.5rem;
+	}
 }
+
+/* @media screen and (max-width: 375px) {
+
+} */
