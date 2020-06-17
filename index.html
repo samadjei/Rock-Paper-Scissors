@@ -12,7 +12,7 @@
 		<div class="container">
 			<div class="flex">
 				<div class="header">
-					<div class="names">
+					<div>
 						<h1>Rock</h1>
 						<h1>Paper</h1>
 						<h1>Scissors</h1>
@@ -49,7 +49,7 @@
 
 			<!-- *SELECT -->
 			<div class="selection" id="selection">
-				<div>
+				<div class="result">
 					<h2>You picked</h2>
 					<button id="user-select" class="paper btn-circle dont-click">
 						<span class="btn-bg">
@@ -57,11 +57,11 @@
 						</span>
 					</button>
 				</div>
-				<div>
+				<div class="go-down">
 					<h1 class="big-text">You <span id="winner">win</span></h1>
 					<button id="reset" class="btn">Play Again</button>
 				</div>
-				<div>
+				<div class="result">
 					<h2>The House Picked</h2>
 					<button id="computer-select" class="rock btn-circle dont-click">
 						<span class="btn-bg">
@@ -75,9 +75,9 @@
 		<!-- *RULES  -->
 		<div class="rules">
 			<a class="modal-btn" href="#">Rules</a>
-    </div>
-    
-    <!-- *Desktop Modal -->
+		</div>
+
+		<!-- *Desktop Modal -->
 		<div class="modal-outer">
 			<div class="modal-inner">
 				<div class="modal-header">
@@ -88,16 +88,16 @@
 				</div>
 				<img src="images/image-rules.svg" alt="" />
 			</div>
-    </div>
-    
-    <!-- *Mobile Modal -->
-		<div class="modal-mobile">
-			<div class="mobile-inner">
-				<h2 class="mobile-header">Rules</h2>
-				<img class="mobile-img" src="images/image-rules.svg" alt="" />
+		</div>
+
+		<!-- *Mobile Modal -->
+		<div class="modal-outer">
+			<div class="modal-inner">
+				<h2 class="rules-header">Rules</h2>
 				<div class="toggle">
-          <a href="#" class="close"></a>
-        </div>
+					<a href="#" class="close"></a>
+				</div>
+				<img class="mobile-img" src="images/image-rules.svg" alt="" />
 			</div>
 		</div>
 	</head>

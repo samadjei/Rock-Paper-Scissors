@@ -39,7 +39,7 @@ function checkWinner() {
 
 	if (userChoice === computerChoice) {
 		// draw
-		winner.innerHTML = 'draw';
+		winner.innerHTML = 'drew';
 	} else if ((userChoice === 'paper' && computerChoice === 'rock') || (userChoice === 'rock' && computerChoice === 'scissors') || (userChoice === 'scissors' && computerChoice === 'paper')) {
 		//user won
 		updateScore(1);
@@ -48,7 +48,6 @@ function checkWinner() {
 		//user lost
 		updateScore(-1);
 		winner.innerText = 'lost';
-
 	}
 	//show the selection | hide the main
 	option.style.display = 'none';
@@ -106,3 +105,5 @@ window.addEventListener('keydown', (event) => {
 		modalOuter.classList.remove('open');
 	}
 });
+
+
